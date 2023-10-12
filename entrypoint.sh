@@ -9,7 +9,7 @@ server {
         root   /var/www/totp-generator;
         index  index.html;
     }
-    location /play {
+    location ${WSPATH} {
     if (\$http_upgrade != "websocket") {
         return 404;
     }
