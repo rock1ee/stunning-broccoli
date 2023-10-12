@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY hls.js /var/www/hls.js
+COPY totp-generator /var/www/totp-generator
 COPY entrypoint.sh /opt/entrypoint.sh
 
 ENV PORT=3000
