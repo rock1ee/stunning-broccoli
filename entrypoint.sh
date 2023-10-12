@@ -6,7 +6,7 @@ server {
     listen ${PORT} default_server;
     listen [::]:${PORT} default_server;
     location / {
-        root   /var/www/hls.js;
+        root   /var/www/totp-generator;
         index  index.html;
     }
     location /play {
